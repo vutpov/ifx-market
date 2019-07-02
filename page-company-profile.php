@@ -12,32 +12,21 @@
  * @package CUBETIQ_Theme_v1
  */
 
-get_header();
-
-
+    require_once('custom-page-header.php');
 
 ?>
     
-
-
-
-<div class="center-text white my-margin-bottom">
-    <h2>
-        <?php single_post_title(); ?>
-    </h2>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb" style="justify-content: center;background-color:white;">
-            <li class="breadcrumb-item"><a href="<?php echo(get_home_url())?>">Homepage</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><?php the_title()?></li>
-        </ol>
-    </nav>
-</div>
-
-<div class="container company-profile">
+    <div class="container company-profile">
     <br>
     <div class="row">
 
-        <div class="col-12">
+        <div class="col-12 mission">
+
+
+            <p>
+                Dear all members of IFX family,
+            </p>
+
             <p>
                 Established since early 2013, the Royal Financial Corporation (RFC) established the very first generation of Forex Traders in Cambodia. With the strong support from the Royal Group, RFC has become one of the most reliable Forex Brokerage Firms in the local market. The company RFC found its path to the future by applied for Central Counter Party License (CCP) issued by Securities and Exchange Commission of Cambodia (SECC). By cooperate with licensed Liquidation Providers as DirectFX from Australia and IBFX from US, RFC is ready to bring clients connect directly to international financial market with transparency and safety investment environment.
                 Time by time, RFC is now becoming the international standard Forex Broker with the ambitious to conquer the regional markets.
@@ -142,5 +131,7 @@ get_header();
 
 
 <?php    
-    get_footer();
+    require_once('custom-page-footer.php');
 ?>
+
+

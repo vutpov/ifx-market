@@ -33,15 +33,4 @@ get_header();
     </nav>
 </div>
 
-<div class="container" style="padding:135px 0">
-    
-    <?php the_content(); ?>
-    
-
-</div>
-
-
-
-<?php    
-    get_footer();
-?>
+<div class="container" style="padding:100px 0">

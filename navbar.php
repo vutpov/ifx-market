@@ -1,4 +1,4 @@
-<header class="container-fluid main-header">
+<header class="container-fluid main-header animated ">
     <a href="<?php the_permalink() ?>" class="logo">
         <?php the_custom_logo(); ?>
     </a>

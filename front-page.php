@@ -428,7 +428,7 @@ $news_updates = new WP_Query( $query_news_updates );
 <div class="white">
     <div class=" container news-margin">
         <h2 style="text-align:center;margin-bottom:15px;">
-            trading options
+            Trading Options
         </h2>
 
         <div class="horizontal-bar"></div>
