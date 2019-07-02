@@ -1,0 +1,21 @@
+/*!
+Theme Name: IFX Markets
+Theme URI: https://wp-themes.cubetiqs.com/ifx-markets
+Author: CUBETIQ Solution
+Author URI: https://wp-themes.cubetiqs.com/index.php?author=ifx-markets
+Description: IFX Markets theme, Trading, Markets, Cryptocurrency, etc.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: ifx-markets
+Tags: trading, ifx, crypto
+*/
+
+body {
+    font-size: 20pt;
+}
+
+.product-image {
+    width: 100% !important;
+    height: 200px !important;
+}
