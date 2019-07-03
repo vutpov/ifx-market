@@ -2873,6 +2873,7 @@ h3+.horizontal-bar{
     background-color: #b98332;
     color: #eaeaea;
     font-weight: bold;
+    transition: ease-in 0.3s;
 }
 
 .my-primary-btn:hover{

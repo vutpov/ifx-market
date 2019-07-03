@@ -12,7 +12,7 @@
  * @package CUBETIQ_Theme_v1
  */
 
-get_header();
+    get_header();
 
 
 
@@ -29,6 +29,7 @@ get_header();
         <ol class="breadcrumb" style="justify-content: center;background-color:white;">
             <li class="breadcrumb-item"><a href="<?php echo(get_home_url())?>">Homepage</a></li>
             <li class="breadcrumb-item active" aria-current="page"><?php the_title()?></li>
+            
         </ol>
     </nav>
 </div>

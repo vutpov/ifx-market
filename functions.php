@@ -70,9 +70,12 @@ function ifx_markets_init() {
     add_theme_support( 'menus' );
     register_primary_menu();
     
+    ifx_markets_post_product_type();
     ifx_markets_post_service_type();
-    ifx_markets_post_slider_type();
     ifx_markets_post_news_updates_type();
+    ifx_markets_post_recruitment_type();
+    ifx_markets_post_slider_type();
+    
 }
 
 function ifx_markets_post_service_type() {
@@ -85,7 +88,7 @@ function ifx_markets_post_service_type() {
                 'add_new_item'  => 'Add New Service',
                 'edit_item' => 'Edit Service',
             ),
-            'menu_icon' => 'dashicons-services',
+            'menu_icon' => 'dashicons-feedback',
             'public'    => true,
             'has_archive'   => true,
             'supports'  => array(
@@ -134,6 +137,51 @@ function ifx_markets_post_news_updates_type() {
                 'title', 'thumbnail', 'editor', 'excerpt', 'category',
             ),
             'show_in_rest' => true // enable new visual editor of wordpress
+        )
+    );
+}
+
+function ifx_markets_post_product_type(){
+    register_post_type('products',
+        array(
+            'rewrite' => array ('slug' => 'products'),
+            'labels' => array(
+                'name' => 'Products',
+                'singular_name' => 'Product',
+                'add_new_item' => 'Add New Products',
+                'edit_item' => 'Edit Products',
+            ),
+
+            'menu_icon' => 'dashicons-cart',
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array(
+                'title','thumbnail','editor','excerpt','category',
+            ),
+            'show_in_rest' => true
+        )
+    );
+}
+
+function ifx_markets_post_recruitment_type(){
+    
+    register_post_type('recruitments',
+        array(
+            'rewrite' => array('slug'=>'recruitments'),
+            'labels'=> array(
+                'name' => 'Recruitments',
+                'singular_name' => 'Recruitment',
+                'add_new_item' => 'Add New Recruiments',
+                'edit_item' => 'Edit Recruitment'
+            ),
+
+            'menu_icon' => 'dashicons-megaphone',
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array(
+                'title','thumbnail','editor','excerpt','category','custom-fields'
+            ),
+            
         )
     );
 }
