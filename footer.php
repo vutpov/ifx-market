@@ -133,7 +133,7 @@
 
 <div style="background-color:#2C2523;margin-bottom: 30px">
     <div class="container under-footer">
-        Copyright © <?php echo date('Y'); ?> <a href="#">CUBETIQ Solution</a>
+        Copyright © <?php echo date('Y'); ?> <a href="cubetiqs.com">CUBETIQS Solution</a>
     </div>
 </div>
 

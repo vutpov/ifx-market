@@ -2899,7 +2899,7 @@ h3+.horizontal-bar{
     announcement
     **********/
 
-a.announce{
+a.announce,a.team{
     color: #212529;
 }
 
@@ -2930,6 +2930,31 @@ iframe.eco-calendar{
     background-color:#fafafa !important;
     
 }
+
+
+/***
+    team
+***/
+
+a.team h3{
+    margin-bottom: 5px;
+    color:#B98332;
+}
+
+a.my-primary-btn.team{
+    padding:0;
+    font-size:15px;
+    color:#B98332;
+    background-color:rgba(0,0,0,0);
+}
+
+a.my-primary-btn.team:hover{
+    
+    color:#2C2523 !important;
+    
+}
+
+
 
 
 

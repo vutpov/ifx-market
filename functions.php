@@ -70,6 +70,7 @@ function ifx_markets_init() {
     add_theme_support( 'menus' );
     register_primary_menu();
     
+    ifx_markets_post_team_type();
     ifx_markets_post_product_type();
     ifx_markets_post_service_type();
     ifx_markets_post_news_updates_type();
@@ -94,9 +95,30 @@ function ifx_markets_post_service_type() {
             'public'    => true,
             'has_archive'   => true,
             'supports'  => array(
-                'title', 'thumbnail', 'editor', 'excerpt'
+                'title', 'thumbnail', 'editor', 'excerpt','category'
             ),
             'show_in_rest' => true
+        )
+    );
+}
+
+function ifx_markets_post_team_type(){
+    register_post_type('team',
+        array(
+            'rewrite' => array('slug' => 'management-team'),
+            'labels' => array(
+                'name' => 'Management Team',
+                'singular_name' => 'Management Team',
+                'add_new_item' => 'Add New Member',
+                'edit_item' => 'Edit Member',
+            ),
+            'menu_icon' => 'dashicons-buddicons-buddypress-logo',
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array(
+                'title','thumbnail','editor','custom-fields','category'
+            ),
+            
         )
     );
 }
