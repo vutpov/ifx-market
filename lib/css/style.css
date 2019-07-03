@@ -2879,6 +2879,7 @@ h3+.horizontal-bar{
 .my-primary-btn:hover{
     background-color:#2C2523;
     color:#eaeaea !important;
+    text-decoration: none;
 }
 
 .h3-alternate{
@@ -2893,5 +2894,43 @@ h3+.horizontal-bar{
 .download{
     font-size:13px;
 }
+
+/*********
+    announcement
+    **********/
+
+a.announce{
+    color: #212529;
+}
+
+a.announce:hover{
+    text-decoration: none;
+}
+
+.announce svg{
+    margin-right:15px;
+    color:#B98332;
+    font-size:50px;
+    float:left;
+}
+
+.announce .horizontal-bar{
+    border-radius:0;
+    float:left;
+    margin:15px 0;
+}
+
+/***
+    economic calendar
+***/
+
+iframe.eco-calendar{
+    width:680px;
+    height:700px;
+    background-color:#fafafa !important;
+    
+}
+
+
 
 

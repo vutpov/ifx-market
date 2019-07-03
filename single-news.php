@@ -1,19 +1,4 @@
-<?php get_header(); ?>
-
-<div class="center-text white my-margin-bottom">
-    <h2>
-        <?php single_post_title(); ?>
-    </h2>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb" style="justify-content: center;background-color:white;">
-            <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
-            <li class="breadcrumb-item"><a href="news">News</a></li>
-            <li class="breadcrumb-item active" aria-current="page"><?php the_title();?></li>
-        </ol>
-    </nav>
-</div>
-
-<?php the_post(); ?>
+<?php require_once('custom-single-header.php')?>
 
 <div class="container">
     <div class="row">

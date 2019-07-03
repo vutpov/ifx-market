@@ -74,6 +74,8 @@ function ifx_markets_init() {
     ifx_markets_post_service_type();
     ifx_markets_post_news_updates_type();
     ifx_markets_post_recruitment_type();
+    ifx_markets_post_event_type();
+    ifx_markets_post_annoucement_type();
     ifx_markets_post_slider_type();
     
 }
@@ -175,13 +177,57 @@ function ifx_markets_post_recruitment_type(){
                 'edit_item' => 'Edit Recruitment'
             ),
 
+            'menu_icon' => 'dashicons-groups',
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array(
+                'title','editor','excerpt','category','custom-fields'
+            ),
+            
+        )
+    );
+}
+
+function ifx_markets_post_event_type(){
+
+    register_post_type('events',
+        array(
+            'rewrite' => array('slug' => 'events'),
+            'labels' => array(
+                'name' => 'Events',
+                'singular_name' => 'Event',
+                'add_new_item' => 'Add New Events',
+                'edit_item' => 'Edit Event'   
+            ),
+
+            'menu_icon' => 'dashicons-star-filled',
+            'public' => true,
+            'has_archive' => true,
+            'supports' => array(
+                'title','editor','excerpt','category','thumbnail'
+            ),
+            'show_in_rest' => true
+        )
+    );
+}
+
+function ifx_markets_post_annoucement_type(){
+    register_post_type('announcements',
+        array('rewrite' => array('slug' => 'announcements'),
+            'labels' => array(
+                'name' => 'Announcements',
+                'singular_name' => 'Announcement',
+                'add_new_item' => 'Add New Announcements',
+                'edit_item' => 'Edit Anncouncements'
+            ),
+
             'menu_icon' => 'dashicons-megaphone',
             'public' => true,
             'has_archive' => true,
             'supports' => array(
-                'title','thumbnail','editor','excerpt','category','custom-fields'
+                'title','editor','excerpt','category'
             ),
-            
+            'show_in_rest' => true
         )
     );
 }

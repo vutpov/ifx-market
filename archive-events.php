@@ -1,22 +1,22 @@
 <?php get_header(); 
-    $query_recruit = array(
-        'post_type' => 'recruitments',
+    $query_events = array(
+        'post_type' => 'events',
         
     );
 
-    $recruit = new WP_Query( $query_recruit );
+    $events = new WP_Query( $query_events );
 
     
 ?>
 
 <div class="center-text white my-margin-bottom">
     <h2>
-        Recruitments
+        Events
     </h2>
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb" style="justify-content: center;background-color:white;">
             <li class="breadcrumb-item"><a href="<?php echo(get_home_url())?>">Homepage</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Recruitments</li>
+            <li class="breadcrumb-item active" aria-current="page">Events</li>
         </ol>
     </nav>
 </div>
@@ -30,7 +30,7 @@
     
         <?php
                     
-            while ($recruit->have_posts()) : $recruit->the_post()
+            while ($events->have_posts()) : $events->the_post()
         ?>
 
             <div class="col-md-6 mission" style="margin-bottom:50px;">
@@ -38,6 +38,9 @@
 
                 <div class="horizontal-bar"></div>
 
+                <img src="<?php echo(get_the_post_thumbnail_url())?>" class="img-fluid" alt="">
+
+                <br><br>
                 <?php the_excerpt()?>
 
                 <br>

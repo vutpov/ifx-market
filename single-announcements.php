@@ -5,7 +5,7 @@
     <?php the_content(); ?>
 
     <br>
-    <a href="#" class="my-primary-btn">Apply Now</a>
+    
 </div>
 
 <?php get_footer(); ?>

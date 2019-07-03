@@ -34,10 +34,10 @@
     </nav>
 </div>
 
-<div class="container" style="padding:135px 0">
-    
+<div class="container">
+    <br>
     <?php the_content(); ?>
-    
+    <br>
 
 </div>
 
