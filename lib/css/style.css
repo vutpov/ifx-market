@@ -106,6 +106,14 @@ a.right-top-btn {
     background-color: rgba(0, 0, 0, 0);
 }
 
+a.right-top-btn:hover{
+    color:#eaeaea;
+}
+
+.fixed-header.show-header a.right-top-btn:hover{
+    background-color:#B98332;
+}
+
 .right-top-btn-1:hover {
     border: 2px solid rgba(255, 255, 255, 1);
     color: white;
@@ -241,7 +249,7 @@ nav ul li ul li a:hover {
     position: fixed;
     height: 150px;
     padding-top:30px;
-
+    top:0;
 }
 
 .fixed-header.hide-header {
@@ -2867,6 +2875,11 @@ h3+.horizontal-bar{
     font-weight: bold;
 }
 
+.my-primary-btn:hover{
+    background-color:#2C2523;
+    color:#eaeaea !important;
+}
+
 .h3-alternate{
     font-size:18px !important;
     padding:15px 0;
@@ -2876,8 +2889,8 @@ h3+.horizontal-bar{
     line-height: 30px;
 }
 
-@media screen and(max-width:340px){
-    .my-primary-btn.download{
-        font-size:13px;
-    }
+.download{
+    font-size:13px;
 }
+
+

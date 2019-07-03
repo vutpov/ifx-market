@@ -11,7 +11,7 @@
         
 
        
-        <div style="text-align:center">
+        <div style="text-align:center;margin:25px 0">
             <img src="<?php echo(wp_get_attachment_image_src(205,[640,365])[0])?>" class="img-fluid" alt=""><br>
         </div>
         
