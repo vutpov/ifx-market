@@ -10,13 +10,13 @@
     <h3>Deposit Methods</h3>
     <div class="horizontal-bar"></div>
 
-    Bank name: ACLEDA Bank<br>
+    Bank name: ACLEDA Bank<br><br>
 
-    Account name: IFX Market.<br>
+    Account name: IFX Market.<br><br>
 
-    Account Number: 1800-02- 256367-1- 7<br>
+    Account Number: 1800-02- 256367-1- 7<br><br>
 
-    SWIFT: ACLBKHPP<br>
+    SWIFT: ACLBKHPP<br><br>
 
     Or please visit our office for deposit with address:<br>
     No. 19, Street 392 (Corner Street 71)<br>
