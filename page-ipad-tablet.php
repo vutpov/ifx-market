@@ -12,7 +12,7 @@
     The result is a mobile forex trading application that offers the flexibility and features you may need to trade anywhere, any time.
 
     <div style="text-align:center;margin:25px 0">
-        <img src="<?php echo(wp_get_attachment_image_src(213,[640,365])[0])?>" class="img-fluid" alt=""><br>
+        <img src="<?php echo(get_template_directory_uri())?>/lib/img/metatrader-4-for-tablet.jpeg" class="img-fluid" alt=""><br>
     </div>
 
     <br><br>
@@ -40,7 +40,7 @@
 
     <div class="row">
         <div class="col-md-3">
-            <img src="<?php echo(wp_get_attachment_image_src(212,[213,164])[0])?>" alt="" class="img-fluid"
+            <img src="<?php echo(get_template_directory_uri())?>/lib/img/download-tablet-app.jpeg" alt="" class="img-fluid"
                 style="float:left">
 
 

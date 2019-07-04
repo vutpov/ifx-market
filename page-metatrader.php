@@ -12,7 +12,7 @@
 
        
         <div style="text-align:center;margin:25px 0">
-            <img src="<?php echo(wp_get_attachment_image_src(205,[640,365])[0])?>" class="img-fluid" alt=""><br>
+            <img src="<?php echo(get_template_directory_uri())?>/lib/img/metatrader-4-for-windows.jpeg" class="img-fluid" alt=""><br>
         </div>
         
 
@@ -95,7 +95,7 @@
         <br>
         <div class="row">
             <div class="col-md-3">
-                <img src="<?php echo(wp_get_attachment_image_src(204,[202,164])[0])?>" alt="" class="img-fluid" style="float:left">
+                <img src="<?php echo(get_template_directory_uri())?>/lib/img/download-pc-software.jpeg" alt="" class="img-fluid" style="float:left">
         
         
             

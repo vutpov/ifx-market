@@ -10,7 +10,7 @@
 
 
     <div style="text-align:center;margin:25px 0">
-        <img src="<?php echo(wp_get_attachment_image_src(211,[640,365])[0])?>" class="img-fluid" alt=""><br>
+        <img src="<?php echo(get_template_directory_uri())?>/lib/img/metatrader-4-for-iphone.jpeg" class="img-fluid" alt=""><br>
     </div>
 
     The result is a mobile forex trading application that offers the flexibility and features you may need to trade
@@ -32,7 +32,7 @@
         </div>
 
         <div class="col-md-6">
-            <img src="<?php echo(wp_get_attachment_image_src(210,[202,164])[0])?>" class="img-fluid" alt=""><br>
+            <img src="<?php echo(get_template_directory_uri())?>/lib/img/live-quote-in-your-hand.jpeg" class="img-fluid" alt=""><br>
 
         </div>
     </div>
@@ -44,7 +44,7 @@
     <div class="row">
 
         <div class="col-md-6">
-            <img src="<?php echo(wp_get_attachment_image_src(209,[202,164])[0])?>" class="img-fluid" alt=""><br>
+            <img src="<?php echo(get_template_directory_uri())?>/lib/img/advanced-charting.jpeg" class="img-fluid" alt=""><br>
 
         </div>
 
@@ -66,7 +66,7 @@
     
     <div class="row">
         <div class="col-md-3">
-            <img src="<?php echo(wp_get_attachment_image_src(208,[202,164])[0])?>" alt="" class="img-fluid"
+            <img src="<?php echo(get_template_directory_uri())?>/lib/img/download-ios-app.jpeg" alt="" class="img-fluid"
                 style="float:left">
 
 
