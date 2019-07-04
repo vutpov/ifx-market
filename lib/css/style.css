@@ -2959,6 +2959,39 @@ a.my-primary-btn.team:hover{
     
 }
 
+/******
+    recruit
+****/
+
+.recruit-exerpt-wrapper{
+    background-color:#2C2523;
+    padding:45px 25px;
+    width: 100%;
+    color:#eaeaea;
+    font-size:10px !important;    
+    
+}
+
+.icon{
+    
+    display: table-cell;
+    padding-right:15px;
+    width:35px;
+}
+
+.info{
+    display: table-cell;
+}
+
+
+@media screen and (max-width:768px){
+    .ex-padding{
+        padding-bottom: 15px;
+    }
+}
+
+
+
 
 
 

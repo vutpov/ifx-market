@@ -15,7 +15,6 @@
 get_header();
 
 
-
 ?>
 
 <?php the_post(); ?>
@@ -124,6 +123,54 @@ get_header();
 
 
 </div>
+
+
+
+<div class="user-info">
+
+
+                <div class="container" style="padding: 100px;padding-top:30px">
+
+
+                    <form action="wp-content/themes/ifx-markets/sendmail.php" method="POST">
+                        <div class="row" style="text-align: center">
+                            <div class="col-md-6">
+                                <input type="text" name="name" id="" placeholder="Your Name (Required)">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="email" id="" placeholder="Your Email (Required)">
+                            </div>
+                        </div>
+
+                        <div class="divider-35"></div>
+
+                        <div class="row" style="text-align: center">
+                            <div class="col-md-6">
+                                <input type="text" name="" id="" placeholder="Phone">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="" id="" placeholder="Subject">
+                            </div>
+                        </div>
+
+                        <div class="divider-35"></div>
+
+                        <div class="row" style="text-align: center">
+                            <div class="col-12">
+                                <textarea name="message" id="" placeholder="Your Message" style="height: 300px"></textarea>
+                            </div>
+                        </div>
+
+                        <input type="submit" value="Send Us a Message" class="btn-blue" style="margin-top: 35px">
+
+                    </form>
+
+
+
+                </div>
+
+
+            </div>
 
 
 <iframe

@@ -260,7 +260,7 @@ $news_updates = new WP_Query( $query_news_updates );
         </span>
 
         <br /><br /><br />
-        <a href="#" class="btn-blue">View All Services</a>
+        <a href="?post_type=service" class="my-primary-btn">View All Services</a>
     </div>
 </div>
 
