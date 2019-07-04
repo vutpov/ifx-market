@@ -37,6 +37,10 @@ $news_updates = new WP_Query( $query_news_updates );
     .sub-wrapper a:hover {
         color: #b98332 !important;
     }
+
+    .hamburger{
+        color: rgba(255, 255, 255, 0.8);
+    }
     
     @media screen and (max-width: 992px) {
         .sub-wrapper a,

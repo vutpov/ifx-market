@@ -100,6 +100,30 @@ function ifx_markets_post_service_type() {
             'show_in_rest' => true
         )
     );
+
+
+    
+}
+
+function ifx_markets_post_news_updates_type() {
+    register_post_type( 'news', 
+        array(
+            'rewrite' => array('slug' => 'news'),
+            'labels' => array(
+                'name' => 'News & Updates',
+                'singular_name' => 'News & Update',
+                'add_new_item'  => 'Add New News',
+                'edit_item' => 'Edit News',
+            ),
+            'menu_icon' => 'dashicons-welcome-widgets-menus',
+            'public'    => true,
+            'has_archive'   => true,
+            'supports'  => array(
+                'title', 'thumbnail', 'editor', 'excerpt', 'category',
+            ),
+            'show_in_rest' => true // enable new visual editor of wordpress
+        )
+    );
 }
 
 function ifx_markets_post_team_type(){
@@ -144,26 +168,7 @@ function ifx_markets_post_slider_type() {
     );
 }
 
-function ifx_markets_post_news_updates_type() {
-    register_post_type( 'news', 
-        array(
-            'rewrite' => array('slug' => 'news'),
-            'labels' => array(
-                'name' => 'News & Updates',
-                'singular_name' => 'News & Update',
-                'add_new_item'  => 'Add New News',
-                'edit_item' => 'Edit News',
-            ),
-            'menu_icon' => 'dashicons-welcome-widgets-menus',
-            'public'    => true,
-            'has_archive'   => true,
-            'supports'  => array(
-                'title', 'thumbnail', 'editor', 'excerpt', 'category',
-            ),
-            'show_in_rest' => true // enable new visual editor of wordpress
-        )
-    );
-}
+
 
 function ifx_markets_post_product_type(){
     register_post_type('products',
